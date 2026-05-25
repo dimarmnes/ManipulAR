@@ -18,9 +18,9 @@ Este documento resume las conexiones principales y recomendaciones de montaje.
 | --- | --- |
 | D2 | DIT / llave recta |
 | D3 | DAH |
-| D4 | Botón UP |
-| D5 | Botón DOWN |
-| D6 | Botón SELECT |
+| D4 | Botón Subir |
+| D5 | Botón Bajar |
+| D6 | Botón Seleccionar |
 | D7 | KEY OUT hacia radio, solo en modo Keyer radio |
 | D8 | Salida CW automática interna, no conectar a radio |
 | D11 | Buzzer / sidetone interno |

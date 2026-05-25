@@ -22,6 +22,7 @@ Los comentarios, pruebas y sugerencias son bienvenidos.
 - Preferencias guardadas en EEPROM.
 - Set de caracteres personalizado editable desde el propio equipo.
 - Tono de audio ajustable desde el menú.
+- Cambio de velocidad en el aire durante los modos de práctica.
 - Separación entre salida interna de entrenamiento y salida `KEY OUT` hacia radio.
 
 ## Compilación e instalación
@@ -65,7 +66,7 @@ Ver también:
 
 - Arduino Uno/Nano compatible.
 - LCD 16x2 I2C.
-- Tres pulsadores: UP, DOWN y SELECT.
+- Tres pulsadores: Subir, Bajar y Seleccionar.
 - Buzzer piezo o salida de audio para sidetone.
 - Jack TRS para llave recta o paleta iámbica.
 - Jack de salida hacia radio mediante interfaz de keying.
@@ -76,9 +77,9 @@ Ver también:
 | --- | --- |
 | D2 | DIT / llave recta |
 | D3 | DAH |
-| D4 | Botón UP |
-| D5 | Botón DOWN |
-| D6 | Botón SELECT |
+| D4 | Botón Subir |
+| D5 | Botón Bajar |
+| D6 | Botón Seleccionar |
 | D7 | KEY OUT hacia radio, solo en modo Keyer radio |
 | D8 | Salida CW automática interna; no conectar a radio |
 | D11 | Buzzer / sidetone interno |
@@ -94,7 +95,7 @@ Ver también:
 - Keyer radio
 - Preferencias
 
-UP/DOWN navegan por el menú. SELECT entra al modo seleccionado.
+Subir/Bajar navegan por el menú. Seleccionar entra al modo elegido.
 
 ## Entrenamiento Koch y Farnsworth
 

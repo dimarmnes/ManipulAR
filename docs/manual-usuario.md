@@ -8,11 +8,53 @@ ManipulAR usa tres botones:
 
 | Botón | Función general |
 | --- | --- |
-| UP | Subir, aumentar valor o navegar hacia arriba |
-| DOWN | Bajar, disminuir valor o navegar hacia abajo |
-| SELECT | Entrar, confirmar o salir según el contexto |
+| Subir | Aumentar valor o navegar hacia arriba |
+| Bajar | Disminuir valor o navegar hacia abajo |
+| Seleccionar | Entrar, confirmar o salir según el contexto |
 
-En el menú principal, UP/DOWN cambian de opción y SELECT entra al modo seleccionado.
+En el menú principal, Subir/Bajar cambian de opción y Seleccionar entra al modo elegido.
+
+## Cambio de velocidad en el aire
+
+En varios modos se puede ajustar la velocidad sin volver a Preferencias.
+
+### Entrenar RX, Decodificador y Test PARIS
+
+Durante estos modos, al presionar Subir o Bajar se abre una pausa de velocidad.
+
+En la pausa:
+
+- Subir aumenta la velocidad;
+- Bajar disminuye la velocidad;
+- Seleccionar confirma y vuelve al modo.
+
+El valor modificado queda como velocidad principal del equipo.
+
+### Entrenar TX
+
+En Entrenar TX, Subir o Bajar también abren una pausa, pero el ajuste tiene dos velocidades:
+
+- `RX`: velocidad de lo que envía ManipulAR;
+- `TX`: velocidad usada para decodificar lo que transmite el usuario.
+
+En la pausa:
+
+- Subir aumenta la velocidad seleccionada;
+- Bajar disminuye la velocidad seleccionada;
+- Seleccionar corto alterna entre `RX` y `TX`;
+- Seleccionar largo confirma y vuelve al entrenamiento.
+
+La velocidad `TX` no puede quedar por encima de `RX`. Al salir de la pausa, `RX` queda guardada como velocidad principal.
+
+### Keyer radio
+
+En modo Keyer radio:
+
+- Subir aumenta la velocidad del keyer;
+- Bajar disminuye la velocidad del keyer;
+- Seleccionar vuelve al menú principal.
+
+No aparece una pantalla de pausa separada: el ajuste se aplica directamente mientras se usa el keyer.
 
 ## Modos principales
 
@@ -45,8 +87,8 @@ Permite usar ManipulAR como keyer electrónico conectado a una radio mediante la
 En este modo:
 
 - la salida activa hacia radio es D7;
-- SELECT vuelve al menú principal;
-- UP/DOWN ajustan la velocidad del keyer;
+- Seleccionar vuelve al menú principal;
+- Subir/Bajar ajustan la velocidad del keyer;
 - no se genera sidetone local, porque se espera usar el monitor de la propia radio.
 
 ## Preferencias
@@ -86,10 +128,10 @@ Si la opción está en `0`, la separación Farnsworth queda desactivada.
 
 Dentro de Preferencias:
 
-- UP/DOWN navegan entre opciones;
-- SELECT corto entra o sale de edición;
-- en edición, UP/DOWN cambian el valor;
-- SELECT largo guarda y sale.
+- Subir/Bajar navegan entre opciones;
+- Seleccionar corto entra o sale de edición;
+- en edición, Subir/Bajar cambian el valor;
+- Seleccionar largo guarda y sale.
 
 ## Tipos de llave
 

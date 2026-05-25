@@ -46,9 +46,9 @@ Centraliza funciones relacionadas con el LCD:
 
 Lee los tres pulsadores de navegación:
 
-- UP;
-- DOWN;
-- SELECT.
+- Subir;
+- Bajar;
+- Seleccionar.
 
 Devuelve códigos simples para que los demás módulos no dependan directamente de `digitalRead()`.
 
