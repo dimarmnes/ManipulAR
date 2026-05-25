@@ -1,0 +1,23 @@
+ManipulAR - Notices and acknowledgements
+
+ManipulAR is a CW trainer and electronic keyer project for Arduino.
+
+This project is inspired by:
+
+- cw-trainer by Mike Hughes, KC1DMR
+  https://github.com/mfhughes128/cw-trainer
+
+- Arduino CW Trainer by Tom Lewis, N4TL
+  Published in QST magazine, September 2016
+
+ManipulAR includes a local modified copy of:
+
+- MorseEnDecoder by raron
+  Original copyright notice and GNU GPLv3 license header are preserved
+  in MorseEnDecoder.cpp and MorseEnDecoder.h.
+
+The local changes to MorseEnDecoder are intended to allow runtime tone
+frequency adjustment from the ManipulAR preferences menu.
+
+ManipulAR should be distributed with its source code and with the GNU GPLv3
+license text included in this repository.
