@@ -14,6 +14,8 @@ ManipulAR usa tres botones:
 
 En el menú principal, Subir/Bajar cambian de opción y Seleccionar entra al modo elegido.
 
+Las capturas de pantalla de los modos y menús están disponibles en [`../media/screenshots`](../media/screenshots).
+
 ## Cambio de velocidad en el aire
 
 En varios modos se puede ajustar la velocidad sin volver a Preferencias.

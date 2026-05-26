@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="media/logo/manipular-logo.png" alt="ManipulAR" width="320">
+</p>
+
 # ManipulAR
 
 **ManipulAR** es un entrenador de telegrafía CW para Arduino. Su función principal es ayudar a practicar recepción, transmisión y decodificación de código Morse usando un equipo físico, simple y autónomo.
@@ -27,6 +31,8 @@ Los comentarios, pruebas y sugerencias son bienvenidos.
 
 ## Compilación e instalación
 
+La guía completa está en [`docs/instalacion.md`](docs/instalacion.md).
+
 ### Arduino IDE
 
 1. Instalar Arduino IDE.
@@ -41,6 +47,8 @@ El proyecto incluye una copia local modificada de `MorseEnDecoder`, por lo que n
 
 - `EEPROM`, incluida con el entorno Arduino AVR.
 - `LiquidCrystal_I2C`, instalable desde el Library Manager del Arduino IDE.
+
+Todos los archivos `.ino`, `.cpp` y `.h` del firmware deben permanecer juntos en la carpeta del sketch.
 
 ## Filosofía del proyecto
 
@@ -97,6 +105,18 @@ Ver también:
 
 Subir/Bajar navegan por el menú. Seleccionar entra al modo elegido.
 
+## Capturas
+
+| Inicio | Entrenar RX | Entrenar TX |
+| --- | --- | --- |
+| ![Pantalla de inicio](media/screenshots/pantalla-inicio.png) | ![Modo Entrenar RX](media/screenshots/entrenar-rx-1.png) | ![Modo Entrenar TX](media/screenshots/entrenar-tx-1.png) |
+
+| Decodificador | Test PARIS | Keyer radio |
+| --- | --- | --- |
+| ![Modo Decodificador](media/screenshots/decodificador-1.png) | ![Test PARIS](media/screenshots/test-paris.png) | ![Keyer radio](media/screenshots/keyer.png) |
+
+Hay más capturas de menús, preferencias y estados de entrenamiento en [`media/screenshots`](media/screenshots).
+
 ## Entrenamiento Koch y Farnsworth
 
 El set `Koch` usa la secuencia progresiva de LCWO.net. El nivel 1 practica los dos primeros caracteres de la secuencia; cada nivel siguiente agrega un carácter nuevo, hasta el nivel 40.
@@ -129,6 +149,7 @@ ManipulAR/
 
 ## Documentación
 
+- [`docs/instalacion.md`](docs/instalacion.md): dependencias, archivos necesarios y pasos de compilación.
 - [`docs/manual-usuario.md`](docs/manual-usuario.md): uso general del equipo.
 - [`docs/hardware.md`](docs/hardware.md): conexiones, pines y recomendaciones de montaje.
 - [`docs/practica-cw.md`](docs/practica-cw.md): explicación de Koch, Farnsworth y criterios de práctica.
