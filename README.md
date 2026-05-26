@@ -157,7 +157,6 @@ ManipulAR/
 - [`docs/roadmap.md`](docs/roadmap.md): ideas y pendientes para próximas versiones.
 - [`docs/arquitectura.md`](docs/arquitectura.md): organización interna del firmware.
 - [`docs/licencias.md`](docs/licencias.md): créditos, origen del proyecto y consideraciones de licencia.
-- [`CONTRIBUTING.md`](CONTRIBUTING.md): guía breve para reportar problemas o proponer cambios.
 
 ## Advertencia sobre conexión a radio
 
