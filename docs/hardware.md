@@ -50,7 +50,7 @@ Se recomienda usar optoacoplador, por ejemplo PC817, 4N25, 4N35 o equivalente.
 ### Conexión sugerida del lado Arduino
 
 ```text
-D7 / radioKeyPin -> resistencia 680 ohm a 1k -> ánodo LED opto
+D7 / radioKeyPin -> resistencia 270 ohm a 390 ohm -> ánodo LED opto
 GND Arduino -----------------------------------> cátodo LED opto
 ```
 
