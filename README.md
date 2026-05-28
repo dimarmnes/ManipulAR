@@ -16,6 +16,12 @@ ManipulAR está en una primera versión funcional. El firmware ya puede usarse y
 
 Los comentarios, pruebas y sugerencias son bienvenidos.
 
+## Prototipo
+
+<p align="center">
+  <img src="media/photos/prototipo-en-protoboard.jpg" alt="Prototipo de ManipulAR en protoboard" width="720">
+</p>
+
 ## Funciones principales
 
 - Entrenamiento de recepción CW mediante grupos de caracteres.
