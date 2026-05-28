@@ -8,7 +8,8 @@
 // Jack de llave/paleta TRS: Tip=DIT o llave recta, Ring=DAH, Sleeve=GND.
 // Jack de radio: usar radioKeyPin como salida de manipulacion hacia transistor/opto.
 // D7/radioKeyPin se habilita solo en Keyer radio; evita transmitir durante practicas.
-// cwOutPin es salida del generador automatico; dejar sin conectar a la radio.
+// cwOutPin es salida del generador automatico; queda reservado por firmware.
+// No usar D8 para otros perifericos salvo que se cambie el firmware.
 // Jack de audio externo: conviene resolverlo con contacto conmutado para cortar el buzzer interno.
 const byte morseInPin = 2;
 const byte paddleDahPin = 3;

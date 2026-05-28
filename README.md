@@ -89,10 +89,12 @@ Ver también:
 | D5 | Botón Bajar |
 | D6 | Botón Seleccionar |
 | D7 | KEY OUT hacia radio, solo en modo Keyer radio |
-| D8 | Salida CW automática interna; no conectar a radio |
+| D8 | Reservado por firmware: salida CW automática interna; no reutilizar |
 | D11 | Buzzer / sidetone interno |
 | A4 | SDA LCD I2C |
 | A5 | SCL LCD I2C |
+
+Nota: D8 puede quedar sin cablear, pero no debe usarse para otros periféricos mientras `cwOutPin` siga activo en el firmware.
 
 ## Menú principal
 

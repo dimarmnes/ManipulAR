@@ -22,10 +22,36 @@ Este documento resume las conexiones principales y recomendaciones de montaje.
 | D5 | Botón Bajar |
 | D6 | Botón Seleccionar |
 | D7 | KEY OUT hacia radio, solo en modo Keyer radio |
-| D8 | Salida CW automática interna, no conectar a radio |
+| D8 | Reservado por firmware: salida CW automática interna; no reutilizar |
 | D11 | Buzzer / sidetone interno |
 | A4 | SDA LCD I2C |
 | A5 | SCL LCD I2C |
+
+Nota: D8 puede quedar sin cablear, pero no debe usarse para otros periféricos mientras `cwOutPin` siga activo en el firmware.
+
+
+## Diagrama general ASCII
+
+```text
+                     +-------------------------+
+                     |   ARDUINO UNO / NANO    |
+                     |                         |
+                     |                      D2 +-----> Llave Recta / DIT (Paleta)
+                     |                      D3 +-----> DAH (Paleta) 
+                     |                      D4 +-----> Botón Subir ---------------> GND
+   +-------------+   |                      D5 +-----> Botón Bajar ---------------> GND
+   |  PANTALLA   |   |                      D6 +-----> Botón Seleccionar ---------> GND
+   |  LCD 16x2   |   |                      D7 +-----> [Interfaz Optoacoplada] ---> A la Radio
+   |   CON I2C   |   |                      D8 +-----> Reservado Firmware cwOutPin interno
+   |             |   |                         |       -NO CONECTAR-
+   |         GND +---+ GND                  D11+-----> [220Ω] ---> [Buzzer] ---> GND
+   |         VCC +---+ 5V                      | \---- [1k a 4k7] --- jack audio externo Tip
+   |         SDA +---+ A4                      |
+   |         SCL +---+ A5                      |
+   +-------------+   +-------------------------+
+```
+
+Este diagrama es conceptual. Antes de montar definitivo, revisar el pinout real del optoacoplador elegido y del jack usado.
 
 ## Jack de llave o paleta
 
@@ -47,19 +73,15 @@ La salida `KEY OUT` está en D7 y solo se activa en modo `Keyer radio`.
 
 Se recomienda usar optoacoplador, por ejemplo PC817, 4N25, 4N35 o equivalente.
 
-### Conexión sugerida del lado Arduino
-
 ```text
-D7 / radioKeyPin -> resistencia 270 ohm a 390 ohm -> ánodo LED opto
-GND Arduino -----------------------------------> cátodo LED opto
+                               +-------------+
+D7 Arduino --- [270Ω a 390Ω]---+ A         C +---> Tip jack KEY radio
+                               |    OPTO     |
+                 GND Arduino---+ K         E +---> Sleeve/GND radio
+                               +-------------+
 ```
 
-### Conexión sugerida del lado radio
-
-```text
-Tip jack KEY radio ----> colector opto
-Sleeve/GND radio ------> emisor opto
-```
+Donde `A` es ánodo del LED interno, `K` cátodo, `C` colector y `E` emisor. Revisar siempre el datasheet del opto elegido. En un PC817 típico: pin 1 = A, pin 2 = K, pin 4 = C y pin 3 = E.
 
 ## Buzzer interno
 

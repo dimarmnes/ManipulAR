@@ -128,7 +128,7 @@ ManipulAR separa la salida interna de entrenamiento de la salida hacia radio:
 
 | Salida | Uso |
 | --- | --- |
-| D8 / `cwOutPin` | Generador automático interno |
+| D8 / `cwOutPin` | Generador automático interno; reservado por firmware |
 | D7 / `radioKeyPin` | Manipulación de radio solo en Keyer radio |
 
-Esta separación evita transmitir accidentalmente durante prácticas de entrenamiento.
+Esta separación evita transmitir accidentalmente durante prácticas de entrenamiento. D8 puede quedar sin cablear, pero no debe reutilizarse para otros periféricos mientras el firmware lo use como `cwOutPin`.
