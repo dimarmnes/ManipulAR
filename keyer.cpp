@@ -61,8 +61,11 @@ namespace {
     Mspkr.sideTone(down);
   }
 
-  // Durante una marca solo memorizamos la paleta opuesta; evita doble sonido por un toque corto.
+  // En modo B se memoriza la paleta opuesta durante la marca.
+  // Si el operador suelta ambas paletas antes del espacio, B conserva ese elemento extra;
+  // A espera a ver que paletas siguen presionadas durante el espacio.
   void latch_opposite_paddle() {
+    if (prefs[KEYER_MODE] != KEYER_IAMBIC_B) return;
     if (currentElement == ELEMENT_DIT && dah_pressed()) dahLatch = true;
     if (currentElement == ELEMENT_DAH && dit_pressed()) ditLatch = true;
   }
